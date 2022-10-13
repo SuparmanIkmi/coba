@@ -1,0 +1,142 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: crimson;
+}
+
+h4, ol {
+    color: blueviolet;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+}
+
+.flex-parent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.penulisan {
+    text-indent: 15px;
+    margin-bottom: 0px;
+}
+
+.item-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.input-flex {
+    width: 70%;
+}
+
+.label-flex {
+    width: 30%;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+hr {
+    width: 100%;
+    height : 2px;
+    background-color: black;
+}
+
+.gol_darah {
+    margin-left: 20px;
+}
+
+.flex-footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tanggal_pengiriman {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    background-color:gray;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+.container {
+    width: 75%;
+    padding: 0;
+}
+
+.item-flex {
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-flex {
+    width: 100%;
+}
+
+.label-flex {
+    width: 100%;
+}
+
+.catatan {
+    visibility: visible;
+}
+
+.title {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+.container {
+    width: 100%;
+    padding: 0;
+}
+
+.item-flex {
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-flex {
+    width: 100%;
+}
+
+.label-flex {
+    width: 100%;
+}
+
+.catatan {
+    visibility: hidden;
+    }
+}
